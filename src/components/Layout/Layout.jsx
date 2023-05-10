@@ -1,12 +1,13 @@
+import { LayoutWrap, Main } from './Layout.styled';
 import { Sidebar } from './Sidebar/Sidebar'; 
 
 export const Layout = ({ children }) => {
   return (
-    <div>
+    <LayoutWrap>
       <Sidebar />
-      <main>
+      <Main>
         <>{children}</>
-      </main>
-    </div>
+      </Main>
+    </LayoutWrap>
   );
 };

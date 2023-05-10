@@ -1,25 +1,20 @@
-import { NavLink } from 'react-router-dom';
-
-const getActiveClassName = ({ isActive }) => {
-  return isActive ? '' : '';
-};
+import { NavigationWrap } from "./Navigation.styled";
 
 export const Navigation = () => {
 
   return (
     <>
-      <ul>
+      <NavigationWrap>
         <li>
-          <NavLink to="" className={getActiveClassName}>
-            Home page
-          </NavLink>
+            Кейcи
         </li>
         <li>
-          <NavLink to="" end className={getActiveClassName}>
-            Contacts list
-          </NavLink>
+            Програма
         </li>
-      </ul>
+        <li>
+            Тарифи
+        </li>
+      </NavigationWrap>
     </>
   );
 };

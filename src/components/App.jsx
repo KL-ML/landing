@@ -23,7 +23,7 @@ export const App = () => {
                         <Suspense fallback={<p>...Loading</p>}>
                             <Routes>
                                 <Route path="/" element={<HomePage />} />
-                                <Route path="*" element={<h1>not found page</h1>} />
+                                <Route path="*" element={<HomePage />} />
                             </Routes>
                         </Suspense>
                     </Layout>

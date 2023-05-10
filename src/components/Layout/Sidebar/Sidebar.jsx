@@ -1,11 +1,12 @@
 import { Navigation } from "./Navigation/Navigation"; 
+import { SidebarWrap } from "./Sidebar.styled";
+import { SocialLink } from "./SocialLink/SocialLink";
 
 export const Sidebar = () => {
   return (
-    <div>
-      <div>
-        <Navigation />
-      </div>
-    </div>
+    <SidebarWrap>
+      <SocialLink />
+      <Navigation />
+    </SidebarWrap>
   );
 };
